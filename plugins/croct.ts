@@ -20,7 +20,7 @@ export function fetchContent(slotId: string, options?: ServerSideFetchOptions): 
     promise = promise.catch(() => ({content: fallback}));
   }
 
-  return promise.then(response => response.content);
+  return promise;
 }
 
 type FetchOptions = {
