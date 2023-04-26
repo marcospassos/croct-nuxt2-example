@@ -56,7 +56,7 @@ const plugin: Plugin = ({req, $config}, inject) => {
   const userAgent = getHeader(req.headers, 'user-agent')
   const clientIp = getHeader(req.headers, 'x-forwarded-for') ?? req.socket.remoteAddress;
 
-  const url = new URL(req?.url ?? '', 'https://' + $config.DOMAIN);
+  const url = new URL(req?.url ?? '', $config.BASE_URL);
   const previewToken = url.searchParams.get('croct-preview') ?? undefined;
 
   url.searchParams.delete('croct-preview');
