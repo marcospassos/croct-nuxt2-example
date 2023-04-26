@@ -1,0 +1,28 @@
+{
+  "name": "croct-nuxt2-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@croct/json": "^2.0.1",
+    "@croct/plug": "^0.13.0",
+    "@croct/sdk": "^0.12.3",
+    "cookie": "^0.5.0",
+    "core-js": "^3.25.3",
+    "express": "^4.18.2",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@types/cookie": "^0.5.1"
+  }
+}
