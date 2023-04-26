@@ -3,8 +3,8 @@ export default {
   plugins: ['~/plugins/croct'],
 
   privateRuntimeConfig: {
-    CROCT_API_KEY: process.env.CROCT_API_KEY || '0000000-0000-0000-0000-000000000000',
     BASE_URL: process.env.BASE_URL || 'http://localhost',
+    CROCT_API_KEY: process.env.CROCT_API_KEY || '0000000-0000-0000-0000-000000000000',
     CID_COOKIE_DOMAIN: process.env.CID_COOKIE_DOMAIN || 'localhost',
   },
   publicRuntimeConfig: {
